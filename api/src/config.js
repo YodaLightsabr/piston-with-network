@@ -50,7 +50,7 @@ const options = {
     },
     disable_networking: {
         desc: 'Set to true to disable networking',
-        default: true,
+        default: false,
         parser: x => x === 'true',
         validators: [x => typeof x === 'boolean' || `${x} is not a boolean`],
     },
